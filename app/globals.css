@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 0, 0;
+  --foreground-rgb: 0, 0, 0;
   --link--gb: 11, 106, 127;
 }
 
 a {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--link--gb));
 }
 
 body {

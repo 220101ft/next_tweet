@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Navbar from '@/app/component/Navbar'
 
 export const metadata: Metadata = {
   title: 'Next Tweet',
@@ -13,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main className="flex min-h-screen flex-col p-2">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
