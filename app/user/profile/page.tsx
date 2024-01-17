@@ -1,23 +1,24 @@
-"use client";
+"use client"
 
-import { FaUser } from "react-icons/fa";
-import Input from "@/app/components/Input";
+import Image from "next/image";
+import imageMe from '@/public/images/me.png'
 
-const RegistPage = () => {
+const ProfilePage = () => {
     return (
-        <div className="mx-auto w-1/3">
-            <h1 className="flex text-2xl text-center font-bold">
-                <FaUser className="mt-1 me-3" />
-                Register
-            </h1>
-
-            <div>
-                <Input />
-                <Input />
-                <Input />
+        <div className="mx-auto w-1/2">
+            <h1 className="text-2xl text-center font-bold">Profile</h1>
+            <div className="flex justify-center p-3">
+                <Image
+                    src={imageMe}
+                    className="rounded-full h-36 w-36"
+                    alt=""
+                />
+            </div>
+            <div className="flex justify-center p-3">
+                Test
             </div>
         </div>
     );
-};
+}
 
-export default RegistPage;
+export default ProfilePage;
