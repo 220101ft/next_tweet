@@ -6,9 +6,11 @@ interface NavbarLinkProps {
     onClick?: () => void;
 }
 
+const className = "hidden mt-1 p-3 md:inline-block text-black";
+
 const NavbarLink = ({ href, label, onClick }: NavbarLinkProps) => {
     return (
-        <Link href={href} className="hidden md:inline-block p-3 text-black" onClick={onClick}>
+        <Link href={href} className={className} onClick={onClick}>
             {label}
         </Link>
     );
